@@ -1,0 +1,3 @@
+# Race Condition in HTML DOM Manipulation
+
+This repository demonstrates a race condition that can occur in HTML when JavaScript attempts to interact with the DOM before the elements are fully loaded. This bug can lead to unexpected behavior, such as elements not being styled correctly or scripts throwing errors. The solution shows how to properly handle this by using an event listener to ensure the script runs only after the DOM is ready.
