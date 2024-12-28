@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // This script attempts to manipulate the DOM element
+    // before the element has fully loaded.
+    document.getElementById("myDiv").style.display = "none";
+  </script>
+</body>
+</html>
