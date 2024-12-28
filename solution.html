@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Solution: Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    //This is a more robust way to manipulate the DOM after the page is fully loaded using the DOMContentLoaded event.
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById("myDiv").style.display = "none";
+    });
+  </script>
+</body>
+</html>
